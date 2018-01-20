@@ -1,0 +1,17 @@
+server:
+  port: 7777
+  
+spring:
+  application:
+    name: order-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7772/eureka/
+    
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+    
+    
+  
